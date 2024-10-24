@@ -1,0 +1,18 @@
+CREATE TABLE site_infos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    slogan VARCHAR(255) NOT NULL,
+    description TEXT,
+    logo VARCHAR(255),
+    icon VARCHAR(255),
+    email VARCHAR(255),
+    phone VARCHAR(50),
+    address TEXT,
+    map_html TEXT,
+    copyright_text TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+-- seedding data
+INSERT INTO `site_infos` (`id`, `title`, `name`, `slogan`, `description`, `logo`, `icon`, `email`, `phone`, `address`, `map_html`, `copyright_text`, `created_at`) VALUES (NULL, 'express-master-api', 'express-master-project', 'learn to be silent', 'no description needed.', 'logo.png', 'icon.ico', 'info@phicsart.com', '+880 1710 001337', 'E15, Block F, Zakir Hossen Road, Mohammadpur, Dhaka - 1207', 'n/a', 'Copyright &copy; 2024', current_timestamp());
+

@@ -40,3 +40,16 @@ This is a simple Node.js REST API for managing users, featuring CRUD operations 
    ```bash
    git clone https://github.com/your-username/your-repo-name.git
    cd your-repo-name
+
+
+├── src
+│   ├── controllers        # Controllers for handling requests
+│   ├── entities           # TypeORM entities (models)
+│   ├── routes             # Route definitions
+│   ├── services           # Service layer for business logic
+│   ├── config             # Database and configuration files
+│   └── index.ts           # Main entry point
+├── .env                   # Environment variables
+├── .gitignore             # Git ignore file
+├── README.md              # Project documentation
+└── package.json           # Project metadata and dependencies

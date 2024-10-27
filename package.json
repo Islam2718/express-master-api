@@ -10,19 +10,23 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@types/mysql": "^2.15.26",
+    "body-parser": "^1.20.3",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.1",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "mysql": "^2.18.1",
-    "mysql2": "^3.11.3",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1",
     "typeorm": "^0.3.20"
   },
   "devDependencies": {
     "@types/express": "^5.0.0",
-    "@types/node": "^22.7.9",
+    "@types/node": "^22.8.1",
     "@types/swagger-jsdoc": "^6.0.4",
-    "@types/swagger-ui-express": "^4.1.6"
+    "@types/swagger-ui-express": "^4.1.6",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
   }
 }

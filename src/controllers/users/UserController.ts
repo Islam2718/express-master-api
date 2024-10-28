@@ -69,14 +69,14 @@ import * as UserService from '../../services/UserService';
  *         description: Server error
  */
 
-export const listUsers = async (_req: Request, res: Response) => {
-  const users = await UserService.getAllUsers();
-  res.json(users);
+export const list = async (_req: Request, res: Response) => {
+  const result = await UserService.getAll();
+  res.json(result);
 };
 
-export const createUser = async (req: Request, res: Response) => {
-  const newUser = await UserService.createUser(req.body);
-  res.status(201).json(newUser);
+export const create = async (req: Request, res: Response) => {
+  const result = await UserService.create(req.body);
+  res.status(201).json(result);
 };
 
 /**
@@ -104,9 +104,9 @@ export const createUser = async (req: Request, res: Response) => {
  *         description: User not found
  */
 
-export const getUser = async (req: Request, res: Response) => {
-  const user = await UserService.getUserById(Number(req.params.id));
-  res.json(user);
+export const getById = async (req: Request, res: Response) => {
+  const result = await UserService.getById(Number(req.params.id));
+  res.json(result);
 };
 
 /**
@@ -148,9 +148,9 @@ export const getUser = async (req: Request, res: Response) => {
  *         description: Server error
  */
 
-export const updateUser = async (req: Request, res: Response) => {
-  const updatedUser = await UserService.updateUser(Number(req.params.id), req.body);
-  res.json(updatedUser);
+export const updateById = async (req: Request, res: Response) => {
+  const result = await UserService.updateById(Number(req.params.id), req.body);
+  res.json(result);
 };
 
 /**
@@ -176,7 +176,7 @@ export const updateUser = async (req: Request, res: Response) => {
  *         description: Server error
  */
 
-export const deleteUser = async (req: Request, res: Response) => {
-  await UserService.deleteUser(Number(req.params.id));
+export const deleteById = async (req: Request, res: Response) => {
+  await UserService.deleteById(Number(req.params.id));
   res.status(204).send();
 };

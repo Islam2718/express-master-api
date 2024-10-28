@@ -3,11 +3,11 @@ import { User } from '../entities/User';
 
 const userRepository = AppDataSource.getRepository(User);
 
-export const getAllUsers = async () => await userRepository.find();
-export const getUserById = async (id: number) => await userRepository.findOneBy({ id });
-export const createUser = async (user: Partial<User>) => await userRepository.save(user);
-export const updateUser = async (id: number, user: Partial<User>) => {
+export const getAll = async () => await userRepository.find();
+export const getById = async (id: number) => await userRepository.findOneBy({ id });
+export const create = async (user: Partial<User>) => await userRepository.save(user);
+export const updateById = async (id: number, user: Partial<User>) => {
   await userRepository.update(id, user);
-  return getUserById(id);
+  return getById(id);
 };
-export const deleteUser = async (id: number) => await userRepository.delete(id);
+export const deleteById = async (id: number) => await userRepository.delete(id);

@@ -2,6 +2,13 @@
 
 This is a simple Node.js REST API for managing users, featuring CRUD operations and Swagger documentation. The API allows you to create, read, update, and delete users in a MySQL database. Built with Express, TypeORM, and Swagger for API documentation.
 
+
+
+## Command
+  - To Run: npx ts-node src/server.ts
+  - [updating...]
+
+
 ## Table of Contents
 - [Features](#features)
 - [Technologies](#technologies)

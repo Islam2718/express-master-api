@@ -42,3 +42,27 @@ This is a Express with TypeScript based api project. The main application is to 
 - **Node.js** version >= 14.x
 - **MySQL** database
 - **Git** for cloning the repository
+
+
+## Folder / File Structure
+- Express-Master-Api
+  - node_modules
+  - src
+    - config
+      - database.ts
+      - swagger.ts
+    - controllers
+      - applications
+      - blog
+      - Sliders
+      - SliderItems
+      - SocialLinks
+      - Users
+    - entities
+    - services
+    - app.ts
+    - server.ts
+  - .env
+  - package-lock.json
+  - package.json
+  - tsconfig.json
